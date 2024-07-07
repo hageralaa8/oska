@@ -1,0 +1,278 @@
+:root {
+    --main-color: #ff206e;
+}
+body {
+    font-family: "Bebas Neue", sans-serif;
+    overflow: hidden;
+
+}
+/*  1-width 
+   2- height 
+
+     width:800px===> screen < 800px ---> hai7sel scrol msbt el div b 500px
+    height:100vh===>if(content > 100vh) ---> overflow w hainzl 3la section eli ba3do
+
+   3- min-width
+    4-min-height
+     
+    min-height:100vh if(content > 100vh) auto  
+
+   5- max-width 
+   6- max-height 
+
+      max-width:800px==> screen < 800px ---> el width ad 7gm el screen blzbt a5od el full width screen
+
+    */
+
+/* loading */
+#loading-screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    z-index: 9999999999;
+}
+#loading-screen i{
+   font-size: 24px; 
+   color: white;
+}
+/* side bar */
+.sidebar
+{
+    display: flex;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index:9999999;
+}
+.sidebar .sidebar-inner{
+    background-color:white;
+    padding: 20px;
+}
+.sidebar-inner span{
+    width: 25px ;
+    height: 25px;
+    background-color: var(--main-color);
+    display: inline-block;  /*3ashn ta2bl el width , hieght + hikono gbm b3d + masafat*/
+
+}
+.fa-gear{
+    background-color: var(--main-color);
+    align-self: flex-start;  /*3ashn a7l enha stretch */
+    padding: 15px;
+    font-size: 15px;
+    transform: translateY(50px);
+    color: #ffffff;
+}
+
+/* scroll Top Button */
+.fa-arrow-up{
+    position: fixed ;/* a7rkha blnasba ll viewport w tkon sabta fe scrol  */
+    right: 20px;/*tab3d 3n el yamen w mn ta7t 20px   */
+    bottom: 20px;
+    color: white;
+    background-color:var(--main-color) ;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+    z-index: 99999;
+}
+/* navbar */
+#navbar-example{
+    transition: background-color 1s ;
+}
+.navbar-brand{
+    color: var(--main-color);
+}
+/* home style */
+header.home {
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    /*bt5aly w ana b scrol elbackground sabta  */
+}
+
+header div.header-content a {
+    color: var(--main-color);
+}
+
+header h1 {
+    font-size: 4.5rem;
+}
+
+/* header div.social-icons ul a div
+{
+  width: 40px;
+ height: 40px;
+ border-radius: 50%;
+ border: 1px solid white;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+} */
+
+/* portfolio style */
+section.portfolio header h2 {
+    font-size: 6rem;
+    color: rgba(211, 211, 211, 0.5);
+}
+section.portfolio header h2::after {
+    content: "PORTFOLIO";
+    position: absolute;
+    color: black;
+    font-size: 3rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* Services style */
+section.Services {
+    background-image: url(../images/dark_dot.jpg);
+}
+
+section.Services header h2 {
+    font-size: 6rem;
+    color: rgba(211, 211, 211, 0.5);
+}
+
+section.Services header h2::after {
+
+    content: "SERVICES";
+    position: absolute;
+    color: white;
+    font-size: 3rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section.Services div.servise-content div.servise-item>div {
+
+    width: 40px;
+    height: 40px;
+    /* left: 50%; ===> start-50, top: 0%; , transform: translate(-50%,-50%);====> transalate middle*/
+}
+section.Services div.servise-content div.servise-item>div i
+{
+    transition: color 1s;
+}
+section.Services div.servise-content div.servise-item:hover >div i
+{
+color: var(--main-color) !important;/*  3ashan override 3la el class bg-white el fe boot strap eli ana 3amlo */
+}
+section.Services div.servise-content div.servise-item h2 {
+    position: relative;
+}
+section.Services div.servise-content div.servise-item h2::after {
+    content: "";
+    width: 20px;
+    height: 3px;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 100%;
+    /* bottom: 0%; = top:100%;*/
+    left: 50%;
+    /*  hibd2 el after mn b3d el nos */
+    transform: translate(-50%);
+    transition: width 1s;
+}
+section.Services div.servise-content div.servise-item:hover h2::after
+{
+    width: 50px;
+}
+/* Testimonial style */
+section.testimonial header h2 {
+    font-size: 6rem;
+    color: rgba(211, 211, 211, 0.5);
+}
+
+section.testimonial header h2::after {
+
+    content: "Testimonial";
+    position: absolute;
+    color: black;
+    font-size: 3rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.carousel-item img{
+width: 100px;
+border-radius: 50%;
+transform: translateY(50%);
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-indent: 0%; /*text indent ===> masafa mn badaia p */
+}
+
+
+/* scrol spy */
+.navbar-nav .nav-link.active {
+    color: var(--main-color);
+    position: relative;
+}
+
+/* loading-screen i */
+.spinner {
+    margin: 100px auto;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+  }
+  
+  .spinner > div {
+    background-color: #ffffff;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  }
+  
+  .spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+  }
+  
+  .spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  .spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+  }
+  
+  .spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+  }
+  
+  @-webkit-keyframes sk-stretchdelay {
+    0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+    20% { -webkit-transform: scaleY(1.0) }
+  }
+  
+  @keyframes sk-stretchdelay {
+    0%, 40%, 100% { 
+      transform: scaleY(0.4);
+      -webkit-transform: scaleY(0.4);
+    }  20% { 
+      transform: scaleY(1.0);
+      -webkit-transform: scaleY(1.0);
+    }
+  }

@@ -1,0 +1,28 @@
+https://elonsolmostafa1.github.io/Osaka/
+account github
+email:hageralaamohamed88@gmail.com
+password:Hager@01155476335
+-------------------------------------------------
+<body data-bs-spy="scroll" data-bs-target="#navbar-example" > 
+
+-links wa5da el space kolo bsbbb en bootstrap mdy flex-grow:1;--> / 2-class=me-auto==>en el text ykon mn el badaia el7al a5li ul nafsha (margin-start-auto ms-auto)
+-position-fixed bi5ly sabt 3la scroll===>z-index-3(z-3) ,top=0 ,start=0 ,end=0 ==>fixed-top 
+-bg-black + data-bs-theme="dark 3ashn el kalm elwhite yazhr-->
+---------------------------------------
+***jquery***
+loading--->fetch-->json--->display--->fadeOut
+/* event->hover , load ,ready (asr3 mn load)
+
+//change navbar color
+1- scroll-->a3rf azay ana scroll wla la --->Event (window).scroll
+2- where--> w ana bscrol ana fen bzbt fe el project --->$(window).scrollTop() ; el bo3d ad eh mn el top
+3-first section-->ana 3adet awel section wla la w a3ml if condition
+--------------------------------------------------------------
+scrollTop()
+1-setter--> scroll 7ta mo3ina awel maft7 elproject
+2-getter a3rf ana 3la bo3d kam mn el top
+----------------------------------------------------
+scrollLeft()
+----------------------------------------------------
+offset-->ay element w hya hat2oly b3do 3n el top w left fe sore object
+*/

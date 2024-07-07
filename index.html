@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Osaka</title>
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!-- start page loading -->
+  <div id="loading-screen">
+    <!-- position-fixed bg-black z-3 top-0 start-0 bottom-0 end-0 bg-black d-flex justify-content-center align-items-center -->
+    <div class="spinner">
+      <div class="rect1"></div>
+      <div class="rect2"></div>
+      <div class="rect3"></div>
+      <div class="rect4"></div>
+      <div class="rect5"></div>
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <div class="sidebar-inner">
+      <p>choose accent color </p>
+      <!--elments  inline-elments el msh bt2bl width w height  -->
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <i class="fa-solid fa-gear"></i>
+  </div>
+  <!-- <a class="fa-solid fa-arrow-up text-decoration-none" href="#home"></a> -->
+  <a class="fa-solid fa-arrow-up"></a>
+<!-- data-bs-theme="dark" / class="navbar-dark" text-white -->
+  <nav id="navbar-example" class="navbar navbar-expand-lg bg-black fixed-top"data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand fs-3" href="#">Osaka</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item fs-5">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item fs-5">
+            <a class="nav-link" href="#Portfolio">Portfolio </a>
+          </li>
+          <li class="nav-item fs-5">
+            <a class="nav-link" href="#Services"> Services</a>
+          </li>
+          <li class="nav-item fs-5">
+            <a class="nav-link" href="#testimonial">Testimonial</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="home min-vh-100 d-flex align-items-center position-relative">
+    <div class="header-content container text-white text-uppercase ">
+      <h1>Robin Steel</h1>
+      <p class="fs-4">Developer, Graphics & Web Design</p>
+      <a class="text-decoration-none" href="">View Portfolio</a>
+    </div>
+    <div class="social-icons position-absolute bottom-0">
+      <ul class="list-unstyled d-flex">
+        <li class="mx-4">
+          <a class="text-decoration-none" href="#">
+            <div
+              class="w-50 h-50 border border-1 border-white rounded-circle p-3 d-flex justify-content-center align-items-center  ">
+              <i class=" fa-brands text-white fs-4 fa-facebook-f"></i>
+            </div>
+          </a>
+        </li>
+        <li class="mx-4"><a class="text-decoration-none" href="#">
+            <div
+              class="w-50 h-50 border border-1 border-white rounded-circle p-3 d-flex justify-content-center align-items-center  ">
+              <i class=" fa-brands text-white fs-4 fa-twitter"></i>
+            </div>
+          </a></li>
+        <li class="mx-4"><a class="text-decoration-none" href="#">
+            <div
+              class="w-50 h-50 border border-1 border-white rounded-circle p-3 d-flex justify-content-center align-items-center  ">
+              <i class=" fa-brands text-white fs-4 fa-instagram"></i>
+            </div>
+          </a></li>
+        <li class="mx-4"><a class="text-decoration-none" href="#">
+            <div
+              class="w-50 h-50 border border-1 border-white rounded-circle p-3 d-flex justify-content-center align-items-center  ">
+              <i class=" fa-brands text-white fs-4 fa-tiktok"></i>
+            </div>
+          </a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <!-- 1- text shadow msh hat5leny a3rf at7km fe el widht hatkon nafs size el element els7 before-after -->
+    <section id="Portfolio" class="portfolio p-5">
+      <header class="port-head text-center">
+        <h2 class="position-relative text-uppercase d-flex justify-content-center align-items-center">Portfolio
+        </h2>
+        <!--  1- khalet h2 , h2:after kol wahed fe layer lw7dha + justify-content-center+ align-items-center / 1- top=50% left=50% translate:-50% , -50% -->
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, in.</p>
+      </header>
+      <div class="portfolio-content">
+        <div class="container">
+          <div class="row g-3"><!-- g==>gutter 3la x ,y -->
+            <div class="col-sm-6 col-md-4">
+              <div data-bs-toggle="modal" data-bs-target="#exampleModal"> <img src="./images/1.jpg" class="w-100 "
+                  alt=""></div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div data-bs-toggle="modal" data-bs-target="#exampleModa2"> <img src="./images/2.jpg" class="w-100"
+                  alt=""></div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div data-bs-toggle="modal" data-bs-target="#exampleModa3"> <img src="./images/3.jpg" class="w-100"
+                  alt=""></div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div data-bs-toggle="modal" data-bs-target="#exampleModa4"> <img src="./images/4.jpg" class="w-100"
+                  alt=""></div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div data-bs-toggle="modal" data-bs-target="#exampleModa5"> <img src="./images/5.jpg" class="w-100"
+                  alt=""></div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div data-bs-toggle="modal" data-bs-target="#exampleModa6"> <img src="./images/6.jpg" class="w-100"
+                  alt=""></div>
+            </div>
+          </div>
+        </div>
+        <!-- 1- id shart ykon mp5tlf + aro7 arboto fe el div bnafs el id ama ados 3l sora yazhry el modal bta3ha 
+                2- data-bs-toggle="modal" data-bs-target="#exampleModa1" ====> dol asas ezhar el modal w arobtvel id b data-bs-target > -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog  modal-lg">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img src="./images/1.jpg" class="w-100" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog  modal-lg">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img src="./images/2.jpg" class="w-100" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModa3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog  modal-lg">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img src="./images/3.jpg" class="w-100" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModa4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog  modal-lg">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img src="./images/4.jpg" class="w-100" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModa5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog  modal-lg">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img src="./images/5.jpg" class="w-100" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModa6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog  modal-lg">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img src="./images/6.jpg" class="w-100" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Services" class="Services py-5">
+      <header class="serv-head text-center">
+        <h2 class="position-relative text-uppercase d-flex justify-content-center align-items-center">Services
+        </h2>
+        <!--  1- khalet h2 , h2:after kol wahed fe layer lw7dha + justify-content-center+ align-items-center / 1- top=50% left=50% translate:-50% , -50% -->
+        <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, in.</p>
+      </header>
+      <div class="servise-content">
+        <div class="container mt-5">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5">
+            <div class="col">
+              <div class="servise-item position-relative bg-white text-center p-5">
+                <div
+                  class="bg-black border border-1 border-white rounded-circle d-flex align-items-center justify-content-center position-absolute top-0 start-50 translate-middle">
+                  <i class="fa-solid fa-anchor text-white"></i>
+                </div>
+                <h2 class="text-center">Branding</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum tempore vitae delectus! Deserunt
+                  impedit
+                  exercitationem vitae odio, alias dolores doloribus!</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="servise-item position-relative bg-white text-center p-5">
+                <div
+                  class="bg-black border border-1 border-white rounded-circle d-flex align-items-center justify-content-center position-absolute top-0 start-50 translate-middle">
+                  <i class="fa-solid fa-anchor text-white"></i>
+                </div>
+                <h2 class="text-center">Marketing</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum tempore vitae delectus! Deserunt
+                  impedit
+                  exercitationem vitae odio, alias dolores doloribus!</p>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="servise-item position-relative bg-white text-center p-5">
+                <div
+                  class="bg-black border border-1 border-white rounded-circle d-flex align-items-center justify-content-center position-absolute top-0 start-50 translate-middle">
+                  <i class="fa-solid fa-anchor text-white"></i>
+                </div>
+                <h2 class="text-center">Web Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum tempore vitae delectus! Deserunt
+                  impedit
+                  exercitationem vitae odio, alias dolores doloribus!</p>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="servise-item position-relative bg-white text-center p-5">
+                <div
+                  class="bg-black border border-1 border-white rounded-circle d-flex align-items-center justify-content-center position-absolute top-0 start-50 translate-middle">
+                  <i class="fa-solid fa-anchor text-white"></i>
+                </div>
+                <h2 class="text-center">Branding</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum tempore vitae delectus! Deserunt
+                  impedit
+                  exercitationem vitae odio, alias dolores doloribus!</p>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="servise-item position-relative bg-white text-center p-5">
+                <div
+                  class="bg-black border border-1 border-white rounded-circle d-flex align-items-center justify-content-center position-absolute top-0 start-50 translate-middle">
+                  <i class="fa-solid fa-anchor text-white"></i>
+                </div>
+                <h2 class="text-center">Responsive</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum tempore vitae delectus! Deserunt
+                  impedit
+                  exercitationem vitae odio, alias dolores doloribus!</p>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="servise-item position-relative bg-white text-center p-5">
+                <div
+                  class="bg-black border border-1 border-white rounded-circle d-flex align-items-center justify-content-center position-absolute top-0 start-50 translate-middle">
+                  <i class="fa-solid fa-anchor text-white"></i>
+                </div>
+                <h2 class="text-center">Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum tempore vitae delectus! Deserunt
+                  impedit
+                  exercitationem vitae odio, alias dolores doloribus!</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonial" class="testimonial ">
+      <header class="test-head text-center p-5">
+        <h2 class="position-relative text-uppercase d-flex justify-content-center align-items-center">Testimonial
+        </h2>
+        <!--  1- khalet h2 , h2:after kol wahed fe layer lw7dha + justify-content-center+ align-items-center / 1- top=50% left=50% translate:-50% , -50% -->
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, in.</p>
+      </header>
+      <div class="testimonial">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="container carousel-inner text-center"> <!--  body el haga eli fiha slide one .two-->
+            <div class="carousel-item active"><!--  content -->
+              <img src="./images/1-1.jpg" class="" alt="">
+              <!--  lw adet leh translate / position hatkon ma5fy bsbb en el bootstrab mdy overflow:hidden  , lw root shelt overflow hai7sel scrol el 7al hady ll section nafso overflow hidden hwa en ay haga tal3a bra el div shelha w msh hai7sel scrol *** 7al afdel hwa ani atl3 el img fe div low7dha fo2 el border w a3mlha translate 50% tanzl l t7t lw hatl3 fo2 -50% -->
+              <div class="test-item p-5 border text-center">
+                <h3>Olivia Nealon</h3>
+                <p>Web Designer</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro facilis quisquam vero aspernatur
+                  perspiciatis consequatur fugit aliquid, magnam ea ab?</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div>
+                <img src="./images/1-2.jpg" class="" alt="">
+                <div class="test-item p-5 border text-center">
+                  <h3>Olivia Nealon</h3>
+                  <p>Web Designer</p>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro facilis quisquam vero aspernatur
+                    perspiciatis consequatur fugit aliquid, magnam ea ab?</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div><img src="./images/1-3.jpg" class=" " alt=""></div>
+              <div class="test-item p-5 border text-center">
+                <h3>Olivia Nealon</h3>
+                <p>Web Designer</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro facilis quisquam vero aspernatur
+                  perspiciatis consequatur fugit aliquid, magnam ea ab?</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div><img src="./images/1-4.jpg" class="" alt=""></div>
+              <div class="test-item p-5 border text-center">
+                <h3>Olivia Nealon</h3>
+                <p>Web Designer</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro facilis quisquam vero aspernatur
+                  perspiciatis consequatur fugit aliquid, magnam ea ab?</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-indicators position-static">
+            <!--  1- adiha dafualt value (static) 3ashn override 3aliha w tkon btetib el html -->
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1">
+              <img src="./images/1-1.jpg" alt="" class="w-100 rounded-circle"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">
+              <img src="./images/1-2.jpg" class="w-100 rounded-circle" alt=""></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">
+              <img src="./images/1-3.jpg" class="w-100 rounded-circle" alt=""></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4">
+              <img src="./images/1-4.jpg" alt="" class="w-100 rounded-circle"></button>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="./js/jquery-3.7.1.min.js"></script>
+  <script src="./css/bootstrap.bundle.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
